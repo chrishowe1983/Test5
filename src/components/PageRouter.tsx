@@ -15,6 +15,7 @@ import { HolidayReservationsPage } from './HolidayReservationsPage';
 import { GiftWrapScheduler } from './GiftWrapScheduler';
 import { TraditionsPage } from './TraditionsPage';
 import { ThankYouNotesPage } from './ThankYouNotesPage';
+import { SmartGiftPlanner } from './SmartGiftPlanner';
 
 interface PageRouterProps {
   currentPage: string;
@@ -37,7 +38,7 @@ export function PageRouter({ currentPage, emotions, onNavigate }: PageRouterProp
     'christmas': () => <ChristmasPage onNavigate={onNavigate} />,
     'christmas-food': () => <ChristmasFoodPage onNavigate={onNavigate} />,
     'christmas-food-list': () => <ChristmasFoodList onNavigate={onNavigate} />,
-    'christmas-gifts': () => <GiftListPage onNavigate={onNavigate} />,
+    'christmas-gifts': () => <SmartGiftPlanner onNavigate={onNavigate} />,
     'christmas-shopping': () => <FestiveShoppingPage onNavigate={onNavigate} />,
     'christmas-budget': () => <FestiveBudgetPage onNavigate={onNavigate} />,
     'christmas-timeline': () => <HolidayTimelinePage onNavigate={onNavigate} />,
